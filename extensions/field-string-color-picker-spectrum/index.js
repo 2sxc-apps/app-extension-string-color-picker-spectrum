@@ -10,7 +10,7 @@
 */
 
 (() => {
-  const tagName = "field-string-color-spectrum";
+  const tagName = "field-string-color-picker-spectrum";
   const spectrumVersion = "1.1.1";
   const spectrumBase = `https://unpkg.com/spectrum-vanilla@${spectrumVersion}/dist`;
 
