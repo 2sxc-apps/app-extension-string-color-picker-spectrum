@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="20.00.09" ExportDate="2025-12-08T21:18:53.7409778+01:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.04.02" ModuleVersion="21.00.00" ExportDate="2025-12-23T21:42:22.7261614+01:00">
   <Header>
     <App Guid="94a4e1c3-4908-4cd7-a755-0950b69f9ae1" />
     <Language Default="en-us" />
@@ -9,7 +9,7 @@
     </Dimensions>
   </Header>
   <AttributeSets>
-    <AttributeSet StaticName="40ce6cae-2efa-42ab-a96b-e281d301ebd2" Name="@string-color-picker-spectrum" Scope="Extensions.ColorPickerSpectrum" AlwaysShareConfiguration="false">
+    <AttributeSet StaticName="40ce6cae-2efa-42ab-a96b-e281d301ebd2" Name="@string-color-picker-spectrum" Scope="Extension.ColorPickerSpectrum" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="ShowDefaultPalette" Type="Boolean" IsTitle="false">
           <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="f2b9fdd2-73c6-430b-98b4-9818f8e716c3" Json="True" KeyNumber="6921">
@@ -170,6 +170,17 @@
     </AttributeSet>
     <AttributeSet StaticName="App-Settings" Name="App-Settings" Scope="System.App" AlwaysShareConfiguration="false">
       <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="d8fcf112-072b-4d98-87af-b88abd573be4" Name="OneColor" Scope="Default" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity TargetType="2" AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="eff2d846-5064-4028-a9d5-30c361fdf1b8" Json="True" KeyNumber="6982">
+            <Value Key="InputType" Value="string-color-picker-spectrum" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
     </AttributeSet>
     <AttributeSet StaticName="b3b39c53-08dc-4a52-9325-35927a15726f" Name="TestColorSpectrum" Scope="Default" AlwaysShareConfiguration="false">
       <Attributes>
@@ -378,13 +389,13 @@
       <Value Key="OriginalId" Value="" Type="String">
         <Dimension DimensionID="228" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredDnnVersion" Value="09.06.01" Type="String">
+      <Value Key="RequiredDnnVersion" Value="09.11.02" Type="String">
         <Dimension DimensionID="228" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredOqtaneVersion" Value="" Type="String">
+      <Value Key="RequiredOqtaneVersion" Value="06.00.00" Type="String">
         <Dimension DimensionID="228" ReadOnly="false" />
       </Value>
-      <Value Key="RequiredVersion" Value="17.00.00" Type="String">
+      <Value Key="RequiredVersion" Value="21.00.00" Type="String">
         <Dimension DimensionID="228" ReadOnly="false" />
       </Value>
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean">
@@ -478,6 +489,9 @@
       <Value Key="PreserveMarkers" Value="True" Type="Boolean">
         <Dimension DimensionID="228" ReadOnly="false" />
       </Value>
+    </Entity>
+    <Entity TargetType="5" AssignmentObjectType="ContentType" AttributeSetStaticName="32698880-1c2e-41ab-bcfc-420091d3263f" AttributeSetName="SystemExportDecorator" EntityGUID="d539c74f-a5ed-4013-8798-faf914a4b025" Json="True" KeyString="40ce6cae-2efa-42ab-a96b-e281d301ebd2">
+      <Value Key="Configuration" Value="6a859d7c-09f5-4804-9fd6-02dd731579da" Type="Entity" />
     </Entity>
   </Entities>
   <PortalFiles />
